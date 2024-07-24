@@ -1,6 +1,6 @@
 {
   "name": "kolade-hello-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "files": [
@@ -8,7 +8,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && rollup -c",
     "prepublishOnly": "yarn run build"
   },
   "devDependencies": {
@@ -18,13 +19,16 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "rollup": "^4.19.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tslib": "^2.6.3"
   }
 }
