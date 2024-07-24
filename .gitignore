@@ -1,0 +1,45 @@
+# Node modules directory
+/node_modules/
+
+# Yarn lock file (if you prefer to regenerate it)
+# yarn.lock
+
+# Build output directories
+/dist/
+/build/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
+
+# IDE or editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Test coverage reports
+coverage/
+
+# Optional, if you use npm or Yarn cache
+.npm/
+.yarn/
+
+# Optional, if you use Docker
+docker-compose.override.yml
+
+# Optional, if you use OS X specific files
+*.DS_Store
+
+# Optional, if you use Linux specific files
+*.swp
+*.swo
+
+# Optional, if you use Windows specific files
+*.lnk
